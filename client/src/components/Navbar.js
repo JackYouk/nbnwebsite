@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Toolbar, Menu, Container, Button } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import { Toolbar, Menu, Container, Button, MenuItem } from '@mui/material';
+
 import { Image } from 'mui-image';
 
 import northbayLogo from '../images/northbayLogo.png';
@@ -8,17 +8,11 @@ import northbayLogo from '../images/northbayLogo.png';
 import { Link } from 'react-router-dom';
 
 import { styled, alpha } from '@mui/material/styles';
-import MenuItem from '@mui/material/MenuItem';
-import EditIcon from '@mui/icons-material/Edit';
 import LanguageIcon from '@mui/icons-material/Language';
 import ComputerIcon from '@mui/icons-material/Computer';
 import DomainDisabledIcon from '@mui/icons-material/DomainDisabled';
 import RestoreFromTrashIcon from '@mui/icons-material/RestoreFromTrash';
 import RotateLeftIcon from '@mui/icons-material/RotateLeft';
-import Divider from '@mui/material/Divider';
-import ArchiveIcon from '@mui/icons-material/Archive';
-import FileCopyIcon from '@mui/icons-material/FileCopy';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
@@ -77,7 +71,7 @@ const Navbar = () => {
 
 
     return (
-        <Container maxWidth="xl" className='navbarNoScroll' style={{ position: 'fixed' }}>
+        <Container maxWidth="xl" className='navbarNoScroll' style={{ position: 'fixed', backgroundColor: 'lightgrey', zIndex: '77' }}>
             <Toolbar>
                 <Link to='/'>
                     <Image
@@ -85,32 +79,17 @@ const Navbar = () => {
                         height="80"
                         width="300"
                         fit='contain'
-                        duration={100}
-                        easing=
-                        'cubic-bezier(0.7, 0, 0.6, 1)'
-                        showLoading=
-                        {false}
-                        errorIcon=
-                        {true}
-                        shift={null}
-                        distance="100px"
-                        shiftDuration={10}
-                        bgColor="inherit"
                         margin={3}
                     />
                 </Link>
 
                 <Link to='/' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
                     <Button
-                        id="demo-customized-button"
-                        aria-controls={open ? 'demo-customized-menu' : undefined}
-                        aria-haspopup="true"
-                        aria-expanded={open ? 'true' : undefined}
-                        variant="outlined"
+                        variant="text"
                         disableElevation
                         onClick={handleClick}
                         endIcon={<KeyboardArrowDownIcon />}
-                        style={{ backgroundColor: 'grey', color: 'white' }}
+                        
                     >
                         Services
                     </Button>
@@ -149,11 +128,11 @@ const Navbar = () => {
                 </Link>
 
                 <Link to='/' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
-                    <Button color='primary' variant="outlined" style={{ backgroundColor: 'grey', color: 'white' }}>Our Team</Button>
+                    <Button color='primary' variant="text">Our Team</Button>
                 </Link>
 
                 <Link to='/' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
-                    <Button color='primary' variant="outlined" style={{ backgroundColor: 'grey', color: 'white' }}>About Us</Button>
+                    <Button color='primary' variant="text" >About Us</Button>
                 </Link>
             </Toolbar>
         </Container>
