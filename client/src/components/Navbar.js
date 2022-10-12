@@ -71,8 +71,9 @@ const Navbar = () => {
 
 
     return (
-        <Container maxWidth="xl" className='navbarNoScroll' style={{ position: 'fixed', backgroundColor: 'lightgrey', zIndex: '77' }}>
+        <Container maxWidth="xl" className='navbarNoScroll' style={{ position: 'fixed', backgroundColor: 'lightgrey', zIndex: '77', }}>
             <Toolbar>
+                {/* LOGO ----------------------- */}
                 <Link to='/'>
                     <Image
                         src={northbayLogo}
@@ -83,13 +84,14 @@ const Navbar = () => {
                     />
                 </Link>
 
-                <Link to='/' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
+                {/* SERVICES BTN ------------------- */}
+                
                     <Button
                         variant="text"
                         disableElevation
                         onClick={handleClick}
                         endIcon={<KeyboardArrowDownIcon />}
-                        
+                        style={{ color: '#01334d', fontWeight: 'bold', marginLeft: '5vh' }}
                     >
                         Services
                     </Button>
@@ -102,37 +104,57 @@ const Navbar = () => {
                         open={open}
                         onClose={handleClose}
                     >
-                        <MenuItem onClick={handleClose} disableRipple>
-                            <RestoreFromTrashIcon />
-                            Secure Data Destruction
-                        </MenuItem>
-                        <MenuItem onClick={handleClose} disableRipple>
-                            <RotateLeftIcon />
-                            eWaste Recycling
-                        </MenuItem>
-                        <MenuItem onClick={handleClose} disableRipple>
-                            <DomainDisabledIcon />
-                            Office Setup & Decom
-                        </MenuItem>
+                        <Link to='/services/epl' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)'}}>
+                            <MenuItem onClick={handleClose} disableRipple>
+                                <ComputerIcon />
+                                IT Asset Managment
+                            </MenuItem>
+                        </Link>
+
+                        <Link to='/services/data-destruction' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)'}}>
+                            <MenuItem onClick={handleClose} disableRipple>
+                                <RestoreFromTrashIcon />
+                                Secure Data Destruction
+                            </MenuItem>
+                        </Link>
                         
-                        <MenuItem onClick={handleClose} disableRipple>
-                            <LanguageIcon />
-                            Logistics
-                        </MenuItem>
+                        <Link to='/services/ewaste' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)'}}>
+                            <MenuItem onClick={handleClose} disableRipple>
+                                <RotateLeftIcon />
+                                eWaste Recycling
+                            </MenuItem>
+                        </Link>
+                        
+                        <Link to='/services/smarthands' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)'}}>
+                            <MenuItem onClick={handleClose} disableRipple>
+                                <DomainDisabledIcon />
+                                IT/Office Setup & Decom
+                            </MenuItem>
+                        </Link>
+                        
+                        <Link to='/services/logistics' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)'}}>
+                            <MenuItem onClick={handleClose} disableRipple>
+                                <LanguageIcon />
+                                Logistics
+                            </MenuItem>
+                        </Link>
+                        
                         {/* <Divider sx={{ my: 0.5 }} /> */}
-                        <MenuItem onClick={handleClose} disableRipple>
-                            <ComputerIcon />
-                            IT Asset Managment
-                        </MenuItem>
                     </StyledMenu>
+                
+                {/* SALES BTN---------------------------- */}
+                <Link to='/sales' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
+                    <Button color='primary' variant="text" style={{ color: '#01334d', fontWeight: 'bold' }}>Sales</Button>
+                </Link>
+                
+                {/* ABOUT US BTN---------------------------- */}
+                <Link to='/about' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
+                    <Button color='primary' variant="text" style={{ color: '#01334d', fontWeight: 'bold' }}>About Us</Button>
                 </Link>
 
+                {/* Contact BTN---------------------------- */}
                 <Link to='/' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
-                    <Button color='primary' variant="text">Our Team</Button>
-                </Link>
-
-                <Link to='/' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
-                    <Button color='primary' variant="text" >About Us</Button>
+                    <Button color='primary' variant="contained" style={{ backgroundColor: '#01334d', color: 'white', fontWeight: 'bold' }}>Contact Us</Button>
                 </Link>
             </Toolbar>
         </Container>
