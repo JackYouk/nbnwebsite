@@ -1,0 +1,22 @@
+{
+  "name": "northbaynetworks",
+  "version": "1.0.0",
+  "description": "Northbay Networks's Official Site",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server --ignore client",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackYouk/nbnwebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackYouk/nbnwebsite/issues"
+  },
+  "homepage": "https://github.com/JackYouk/nbnwebsite#readme"
+}
