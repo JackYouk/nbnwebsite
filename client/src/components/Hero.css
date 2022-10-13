@@ -1,0 +1,9 @@
+.topmargin {
+    margin-top: 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .topmargin {
+        margin-top: 25vh;
+    }
+  }

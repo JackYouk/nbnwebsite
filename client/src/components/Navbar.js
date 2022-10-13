@@ -71,7 +71,7 @@ const Navbar = () => {
 
 
     return (
-        <Container maxWidth="inherit" className='navbarNoScroll' style={{ position: 'sticky', backgroundColor: 'lightgrey', zIndex: '77', padding: '1vh' }}>
+        <Container maxWidth="inherit" className='navbarNoScroll' style={{ position: 'fixed', backgroundColor: 'lightgrey', zIndex: '77', padding: '1vh' }}>
             <Toolbar>
                 {/* LOGO ----------------------- */}
                 <Link to='/'>
