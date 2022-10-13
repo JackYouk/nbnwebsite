@@ -25,21 +25,6 @@ const Home = () => {
             <Grid item xs={12} justifyContent margin={2}>
                 <h1 style={{ fontFamily: 'monospace' }}>Operations in 50+ countries. Trusted by the biggest names in tech.</h1>
             </Grid>
-            <Grid item xs={12} justifyContent margin={2}>
-                <h1 style={{ fontFamily: 'monospace' }}>Operations in 50+ countries. Trusted by the biggest names in tech.</h1>
-            </Grid>
-            <Grid item xs={12} justifyContent margin={2}>
-                <h1 style={{ fontFamily: 'monospace' }}>Operations in 50+ countries. Trusted by the biggest names in tech.</h1>
-            </Grid>
-            <Grid item xs={12} justifyContent margin={2}>
-                <h1 style={{ fontFamily: 'monospace' }}>Operations in 50+ countries. Trusted by the biggest names in tech.</h1>
-            </Grid>
-            <Grid item xs={12} justifyContent margin={2}>
-                <h1 style={{ fontFamily: 'monospace' }}>Operations in 50+ countries. Trusted by the biggest names in tech.</h1>
-            </Grid>
-            <Grid item xs={12} justifyContent margin={2}>
-                <h1 style={{ fontFamily: 'monospace' }}>Operations in 50+ countries. Trusted by the biggest names in tech.</h1>
-            </Grid>
             <Grid item xs={12}>
                 <Grid
                     container
