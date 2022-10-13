@@ -71,21 +71,16 @@ const Navbar = () => {
 
 
     return (
-        <Container maxWidth="xl" className='navbarNoScroll' style={{ position: 'fixed', backgroundColor: 'lightgrey', zIndex: '77', }}>
+        <Container maxWidth="inherit" className='navbarNoScroll' style={{ position: 'sticky', backgroundColor: 'lightgrey', zIndex: '77', padding: '1vh' }}>
             <Toolbar>
                 {/* LOGO ----------------------- */}
                 <Link to='/'>
-                    <Image
-                        src={northbayLogo}
-                        height="80"
-                        width="300"
-                        fit='contain'
-                        margin={3}
-                    />
+                    <img src={northbayLogo} alt='northbay networks logo' />
                 </Link>
 
                 {/* SERVICES BTN ------------------- */}
-                
+                <div>
+                <Link to='/services' style={{ textDecoration: 'none'}}>
                     <Button
                         variant="text"
                         disableElevation
@@ -95,6 +90,8 @@ const Navbar = () => {
                     >
                         Services
                     </Button>
+                </Link>
+                    
                     <StyledMenu
                         id="demo-customized-menu"
                         MenuListProps={{
@@ -104,58 +101,60 @@ const Navbar = () => {
                         open={open}
                         onClose={handleClose}
                     >
-                        <Link to='/services/epl' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)'}}>
+                        <Link to='/services/epl' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
                             <MenuItem onClick={handleClose} disableRipple>
                                 <ComputerIcon />
                                 IT Asset Managment
                             </MenuItem>
                         </Link>
 
-                        <Link to='/services/data-destruction' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)'}}>
+                        <Link to='/services/data-destruction' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
                             <MenuItem onClick={handleClose} disableRipple>
                                 <RestoreFromTrashIcon />
                                 Secure Data Destruction
                             </MenuItem>
                         </Link>
-                        
-                        <Link to='/services/ewaste' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)'}}>
+
+                        <Link to='/services/ewaste' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
                             <MenuItem onClick={handleClose} disableRipple>
                                 <RotateLeftIcon />
                                 eWaste Recycling
                             </MenuItem>
                         </Link>
-                        
-                        <Link to='/services/smarthands' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)'}}>
+
+                        <Link to='/services/smarthands' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
                             <MenuItem onClick={handleClose} disableRipple>
                                 <DomainDisabledIcon />
                                 IT/Office Setup & Decom
                             </MenuItem>
                         </Link>
-                        
-                        <Link to='/services/logistics' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)'}}>
+
+                        <Link to='/services/logistics' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
                             <MenuItem onClick={handleClose} disableRipple>
                                 <LanguageIcon />
                                 Logistics
                             </MenuItem>
                         </Link>
-                        
+
                         {/* <Divider sx={{ my: 0.5 }} /> */}
                     </StyledMenu>
-                
-                {/* SALES BTN---------------------------- */}
-                <Link to='/sales' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
-                    <Button color='primary' variant="text" style={{ color: '#01334d', fontWeight: 'bold' }}>Sales</Button>
-                </Link>
-                
-                {/* ABOUT US BTN---------------------------- */}
-                <Link to='/about' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
-                    <Button color='primary' variant="text" style={{ color: '#01334d', fontWeight: 'bold' }}>About Us</Button>
-                </Link>
 
-                {/* Contact BTN---------------------------- */}
-                <Link to='/' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
-                    <Button color='primary' variant="contained" style={{ backgroundColor: '#01334d', color: 'white', fontWeight: 'bold' }}>Contact Us</Button>
-                </Link>
+                    {/* SALES BTN---------------------------- */}
+                    <Link to='/sales' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
+                        <Button color='primary' variant="text" style={{ color: '#01334d', fontWeight: 'bold' }}>Sales</Button>
+                    </Link>
+
+                    {/* ABOUT US BTN---------------------------- */}
+                    <Link to='/about' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
+                        <Button color='primary' variant="text" style={{ color: '#01334d', fontWeight: 'bold' }}>About Us</Button>
+                    </Link>
+
+                    {/* Contact BTN---------------------------- */}
+                    <Link to='/contact' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
+                        <Button color='primary' variant="contained" style={{ backgroundColor: '#01334d', color: 'white', fontWeight: 'bold' }}>Contact Us</Button>
+                    </Link>
+                </div>
+
             </Toolbar>
         </Container>
     );
