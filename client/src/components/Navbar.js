@@ -148,7 +148,7 @@ const Navbar = () => {
 
                     {/* Contact BTN---------------------------- */}
                     <Link to='/contact' style={{ textDecoration: 'none', marginLeft: '5vh' }}>
-                        <Button color='primary' variant="contained" style={{ backgroundColor: '#01334d', color: 'white', fontWeight: 'bold' }}>Contact Us</Button>
+                        <Button color='primary' variant="contained" style={{ backgroundColor: '#01334d', color: 'lightgray', fontWeight: 'bold' }}>Contact Us</Button>
                     </Link>
                 </div>
 
