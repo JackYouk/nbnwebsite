@@ -98,35 +98,35 @@ const Navbar = () => {
                         open={open}
                         onClose={handleClose}
                     >
-                        <Link to='/services/epl' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
+                        <Link to='/itam' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
                             <MenuItem onClick={handleClose} disableRipple>
                                 <ComputerIcon />
                                 IT Asset Managment
                             </MenuItem>
                         </Link>
 
-                        <Link to='/services/data-destruction' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
+                        <Link to='/data-destruction' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
                             <MenuItem onClick={handleClose} disableRipple>
                                 <RestoreFromTrashIcon />
                                 Secure Data Destruction
                             </MenuItem>
                         </Link>
 
-                        <Link to='/services/ewaste' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
+                        <Link to='ewaste' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
                             <MenuItem onClick={handleClose} disableRipple>
                                 <RotateLeftIcon />
                                 eWaste Recycling
                             </MenuItem>
                         </Link>
 
-                        <Link to='/services/smarthands' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
+                        <Link to='smarthands' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
                             <MenuItem onClick={handleClose} disableRipple>
                                 <DomainDisabledIcon />
                                 IT/Office Setup & Decom
                             </MenuItem>
                         </Link>
 
-                        <Link to='/services/logistics' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
+                        <Link to='/logistics' style={{ textDecoration: 'none', color: 'rgb(55, 65, 81)' }}>
                             <MenuItem onClick={handleClose} disableRipple>
                                 <LanguageIcon />
                                 Logistics
