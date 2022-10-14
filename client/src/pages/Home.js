@@ -25,6 +25,7 @@ const Home = () => {
             direction="column"
             justifyContent="center"
             alignItems="center"
+            marginBottom="10vh"
         >
             <Grid item xs={12} justifyContent margin={2} width="90vw">
                 <HeroBanner style={{ zIndex: '-1' }} />
@@ -60,6 +61,7 @@ const Home = () => {
                     </Grid>
                 </Grid>
             </Grid>
+
         </Grid>
     )
 }
