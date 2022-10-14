@@ -7,6 +7,14 @@ import gemlogo from '../images/gemlogo.png';
 import vantalogo from '../images/vantalogo.png';
 import applovinlogo from '../images/applovinlogo.png'
 
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
 import { Grid } from '@mui/material';
 
 const Home = () => {
@@ -23,7 +31,7 @@ const Home = () => {
             </Grid>
 
             <Grid item xs={12} justifyContent margin={2}>
-                <h1 style={{ fontFamily: 'monospace' }}>Operations in 50+ countries. Trusted by the biggest names in tech.</h1>
+                <h2 style={{ fontFamily: 'Impact', color: '#01334d' }}>Operations in 50+ countries. Trusted by the biggest names in tech.</h2>
             </Grid>
             <Grid item xs={12}>
                 <Grid

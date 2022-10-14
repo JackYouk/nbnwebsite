@@ -80,7 +80,6 @@ const Navbar = () => {
 
                 {/* SERVICES BTN ------------------- */}
                 <div>
-                <Link to='/services' style={{ textDecoration: 'none'}}>
                     <Button
                         variant="text"
                         disableElevation
@@ -89,9 +88,7 @@ const Navbar = () => {
                         style={{ color: '#01334d', fontWeight: 'bold', marginLeft: '5vh' }}
                     >
                         Services
-                    </Button>
-                </Link>
-                    
+                    </Button>                
                     <StyledMenu
                         id="demo-customized-menu"
                         MenuListProps={{

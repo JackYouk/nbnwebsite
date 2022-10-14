@@ -9,6 +9,10 @@ import receivingPic from '../images/receiving.jpeg'
 import shippingPic from '../images/shipping.jpeg'
 import imageingPic from '../images/imageing.jpeg'
 
+import { Button } from '@mui/material';
+import Computer from '@mui/icons-material/Computer';
+import { padding } from '@mui/system';
+
 const HeroBanner = (props) => {
 
     return (
@@ -16,18 +20,43 @@ const HeroBanner = (props) => {
             <Carousel autoPlay={true} infiniteLoop={true} style={{zIndex: "0"}}>
                 <div>
                     <img src={warehousePic} style={{maxHeight: '450px'}}/>
+                    <div style={{backgroundColor: '#01334d', padding: '4vh', color: 'lightgray', fontFamily: 'arial'}}>
+                        <h2 style={{marginBottom: '1vh', display: 'flex', justifyContent: 'center',}}>IT Asset Managment</h2>
+                        <p>Assetization, refurbishment/reimaging, and endpoint logistics of tech assets on a worldwide scale</p>
+                        <Button variant="text" style={{color: 'lightgray', fontStyle: 'italic', fontWeight: 'bold'}}>Learn More</Button>
+                    </div>
                 </div>
                 <div>
                     <img src={warehousePic} style={{maxHeight: '450px'}}/>
+                    <div style={{backgroundColor: '#01334d', padding: '4vh', color: 'lightgray', fontFamily: 'arial'}}>
+                        <h2 style={{marginBottom: '1vh', display: 'flex', justifyContent: 'center',}}>Secure Data Destruction</h2>
+                        <p>Your data's safety is our biggest concern</p>
+                        <Button variant="text" style={{color: 'lightgray', fontStyle: 'italic', fontWeight: 'bold'}}>Learn More</Button>
+                    </div>
                 </div>
                 <div>
                     <img src={warehousePic} style={{maxHeight: '450px'}}/>
+                    <div style={{backgroundColor: '#01334d', padding: '4vh', color: 'lightgray', fontFamily: 'arial'}}>
+                        <h2 style={{marginBottom: '1vh', display: 'flex', justifyContent: 'center',}}>eWaste Recycling</h2>
+                        <p>eWaste sucks, we'll get rid of it for you!</p>
+                        <Button variant="text" style={{color: 'lightgray', fontStyle: 'italic', fontWeight: 'bold'}}>Learn More</Button>
+                    </div>
                 </div>
                 <div>
                     <img src={warehousePic} style={{maxHeight: '450px'}}/>
+                    <div style={{backgroundColor: '#01334d', padding: '4vh', color: 'lightgray', fontFamily: 'arial'}}>
+                        <h2 style={{marginBottom: '1vh', display: 'flex', justifyContent: 'center',}}>IT/Office Install & Decom</h2>
+                        <p>IT and Office equipment installation, decomission, and transportation nationwide + more</p>
+                        <Button variant="text" style={{color: 'lightgray', fontStyle: 'italic', fontWeight: 'bold'}}>Learn More</Button>
+                    </div>
                 </div>
                 <div>
                     <img src={warehousePic} style={{maxHeight: '450px'}}/>
+                    <div style={{backgroundColor: '#01334d', padding: '4vh', color: 'lightgray', fontFamily: 'arial'}}>
+                        <h2 style={{marginBottom: '1vh', display: 'flex', justifyContent: 'center',}}>Logistics</h2>
+                        <p>International shipping & logistics specializing in IT, Office, and Medical equipment</p>
+                        <Button variant="text" style={{color: 'lightgray', fontStyle: 'italic', fontWeight: 'bold'}}>Learn More</Button>
+                    </div>
                 </div>
             </Carousel>
         </div>
